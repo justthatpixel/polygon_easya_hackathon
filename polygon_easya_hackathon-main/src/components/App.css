@@ -1,0 +1,101 @@
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.background {
+  --main: #fff;
+  --secondary: #8247E5;
+
+  background-image: url(images/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.main {
+  margin-bottom: -200px;
+}
+
+#standard-basic {
+  display: inline-block;
+}
+
+h1, p {
+  color: var(--main);
+}
+
+form {
+  border-radius: 1em;
+  background-color: var(--secondary);
+  width: fit-content;
+  padding: 3em 4em;
+  margin: 5em 5em;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+form button, form button:hover {
+  width: 6em;
+  height: 2em;
+  border-radius: 0.5em;
+  border-color: transparent;
+  color: var(--secondary);
+  font-size: 16px;
+  transition: all 0.5s ease;
+}
+form button:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  font-size: 18px;
+}
+
+form .text {
+  color: #fff;
+  font-size: 20px
+}
+
+form label {
+  color: #fff;
+  font-size: 16px;
+  transform: translateX(0.5em);
+}
+
+form .checkLabel {
+  transform: translateX(3em);
+}
+
+.link {
+  border-radius: 0.5em;
+  text-decoration: none;
+  background-color: var(--secondary);
+  color: var(--main);
+  font-size: 2.2em;
+  padding: 0.3em 0.7em;
+  transition: all 0.5s ease;
+}
+.link:hover {
+  text-decoration: none;
+  color: var(--main);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  font-size: 2.5em;
+}
+
+.chart {
+  border-radius: 1em;
+  background-color: var(--main);
+  width: fit-content;
+  padding: 3em;
+}
+
+.donationAmount, .donationAmount:focus {
+  border-width: 0 0 2px 0;
+  background-color: transparent;
+  color: #fff;
+  border-color: #fff;
+  font-size: 20px;
+  outline: none;
+}
+
+input[type="radio"]:checked{
+  background-color: var(--main);
+}
